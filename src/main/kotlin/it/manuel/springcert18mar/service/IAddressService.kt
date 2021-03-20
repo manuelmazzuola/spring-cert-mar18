@@ -1,3 +1,7 @@
 package it.manuel.springcert18mar.service
 
-interface IAddressService
+import it.manuel.springcert18mar.pojo.Address
+
+interface IAddressService {
+    fun getAddressList(sort: String, order: String, limit: Int): MutableIterable<Address>
+}

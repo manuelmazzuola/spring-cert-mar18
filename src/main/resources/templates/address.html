@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+
+<body>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">City</th>
+        <th scope="col">Region</th>
+        <th scope="col">State</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="a: ${address}">
+        <td th:text="${a.city}"/>
+        <td th:text="${a.region}"/>
+        <td th:text="${a.state}"/>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
